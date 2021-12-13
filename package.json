@@ -1,0 +1,37 @@
+{
+  "name": "public-ip",
+  "version": "1.0.0",
+  "description": "Your own Micro service running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "4.16.3",
+    "express-subdomain": "^1.0.5",
+    "node-static": "^0.7.11",
+    "spdy": "^4.0.2",
+    "vhost": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zlatnaspirala/public-ip.git"
+  },
+  "keywords": [
+    "micro-service",
+    "public-ip",
+    "remote-ip",
+    "whatismyip",
+    "what-is-my-ip",
+    "get-remote-ip"
+  ],
+  "author": "Nikola Lukic zlatnaspirala@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zlatnaspirala/public-ip/issues"
+  },
+  "homepage": "https://github.com/zlatnaspirala/public-ip#readme"
+}
