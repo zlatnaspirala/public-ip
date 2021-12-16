@@ -32,19 +32,17 @@ if (typeof process.argv[3] != undefined) {
   console.warn("Use default port: ", config.port);
 }
 
-if (typeof process.argv[4] != undefined) {
+if (typeof process.argv[4] == undefined) {
   options = {
     key: fs.readFileSync("self-cert/privatekey.pem"),
     cert: fs.readFileSync("self-cert/certificate.pem")
   };
-}
-
-/*else {
+} else {
   options = {
-    key: fs.readFileSync("/etc/letsencrypt/live/maximumroulette.com/privkey.pem"),
-    cert: fs.readFileSync("/etc/letsencrypt/live/maximumroulette.com/fullchain.pem")
+    key: fs.readFileSync(process.argv[4]),
+    cert: fs.readFileSync(process.argv[5])
   };
-}*/
+}
 
 function start() {
 
