@@ -54,8 +54,8 @@ function start() {
   var http = require('http');
   // var bodyParser = require('body-parser');
 
-  app.use(express.json({limit: '256b'}));
-  app.use(express.urlencoded({limit: '256b'}));
+  app.use(express.json({limit: '2kb'}));
+  app.use(express.urlencoded({limit: '2kb'}));
   // app.use(bodyParser.json({limit: '256b'}));
   // app.use(bodyParser.urlencoded({limit: '256b', extended: true}));
 

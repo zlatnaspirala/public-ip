@@ -30,7 +30,7 @@ myMicroService.publicIP.start();
 On frontend just call route:
 
 ```
-http://YOUT_DOMAIN:8888
+http://YOUT_DOMAIN:9999
 ```
 
 Response:
