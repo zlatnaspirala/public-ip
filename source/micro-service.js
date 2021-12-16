@@ -17,7 +17,7 @@ let options = {};
 // console.log("[NODE] => ", process.argv[0]);
 // console.log("[appName] => ", process.argv[1]);
 
-if (typeof process.argv[2] != undefined && 
+if (typeof process.argv[2] != undefined &&
      (process.argv[2] == "http" || process.argv[2] == "https" || process.argv[2] == "http2")) {
   config.protocol = process.argv[2];
   console.warn("Use protocol: ", config.protocol);
@@ -25,7 +25,7 @@ if (typeof process.argv[2] != undefined &&
   console.warn("Use default protocol http.");
 }
 
-if (typeof process.argv[3] != undefined && Number.isInteger(process.argv[3])) {
+if (typeof process.argv[3] != undefined) {
   config.port = process.argv[3];
   console.warn("Use port: ", config.port);
 } else {
@@ -52,12 +52,12 @@ function start() {
   var app = express();
   var https = require('https');
   var http = require('http');
-  var bodyParser = require('body-parser');
+  // var bodyParser = require('body-parser');
 
   app.use(express.json({limit: '256b'}));
   app.use(express.urlencoded({limit: '256b'}));
-  app.use(bodyParser.json({limit: '256b'}));
-  app.use(bodyParser.urlencoded({limit: '256b', extended: true}));
+  // app.use(bodyParser.json({limit: '256b'}));
+  // app.use(bodyParser.urlencoded({limit: '256b', extended: true}));
 
   /**
    * @description Allow or disallow headers flags.

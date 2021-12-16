@@ -13,12 +13,12 @@ node yourAppName.js <PROTOCOL> <PORT> <SSLPATH_PRIVATEKEY> <SSLPATH_CERT>
 
 ### Running microservice publicIP on `http` protocol
 ```js
-node test.js http 8888
+node test.js http 9999
 ```
 
 ### Running microservice publicIP on `https` protocol with your domain SSL
 ```js
-node test.js https 8888 "/etc/letsencrypt/live/maximumroulette.com/privkey.pem" "/etc/letsencrypt/live/maximumroulette.com/fullchain.pem"
+node test.js https 9999 "/etc/letsencrypt/live/maximumroulette.com/privkey.pem" "/etc/letsencrypt/live/maximumroulette.com/fullchain.pem"
 ```
 
 ### Usage (test.js)
@@ -27,4 +27,13 @@ var myMicroService = require("./index.js");
 myMicroService.publicIP.start();
 ```
 
-On frontend just call route 
+On frontend just call route:
+
+```
+http://YOUT_DOMAIN:8888
+```
+
+Response:
+```
+
+```
