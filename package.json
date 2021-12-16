@@ -1,8 +1,8 @@
 {
-  "name": "public-ip",
+  "name": "return-public-ip",
   "version": "1.0.0",
-  "description": "Your own Micro service running.",
-  "main": "index.mjs",
+  "description": "Your own Micro service running. Return Public IP Address.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

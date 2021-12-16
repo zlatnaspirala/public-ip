@@ -1,8 +1,13 @@
 # public-ip
 
 ```json
-## WIP
+Microservice based on node.js
 ```
+Source:
+`https://github.com/zlatnaspirala/public-ip`
+
+NPM:
+`npm i `
 
 This is standalone app without any external microservice call. Service works on Node.js. You need to start it on public server and you will have your own microservice link.
 
@@ -33,7 +38,10 @@ On frontend just call route:
 http://YOUT_DOMAIN:9999
 ```
 
-Response:
+Response [JSON]:
+```
+{"message":"Microservice publicIP - MIT Licence https://github.com/zlatnaspirala/public-ip 2021","ipaddress":"87.116.**.**"}
 ```
 
-```
+Take a look at:
+https://maximumroulette.com:9999
